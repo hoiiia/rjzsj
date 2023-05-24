@@ -1,0 +1,49 @@
+.control {
+    box-sizing: content-box;
+    color: var(--top-site-color,var(--neutral-foreground-rest));
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    max-height: 18px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0px;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.expanded-sites {
+    opacity: 1;
+    visibility: inherit;
+}
+.topSitesLightOnBackgroundImage {
+    --top-site-fill-hover: rgba(229,229,229,0.3);
+    --top-site-color: #FFFFFF;
+    --top-site-action-icon-hover: rgba(234,234,234,0.42);
+    --top-site-placeholder-backplate-fill: rgba(229,229,229,0.7);
+    --neutral-foreground-hint: rgba(255,255,255,0.54);
+}
+.root {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease-out 0s;
+    z-index: 301;
+    --top-site-margin: 4px;
+    --outline-width: 2;
+}
+
+:host {
+    width: 100%;
+    --menu-max-width: 210px;
+    --menu-min-width: 160px;
+    --top-site-dialog-z-index: 900;
+}
